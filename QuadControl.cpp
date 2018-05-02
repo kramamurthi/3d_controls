@@ -12,6 +12,8 @@
 #include <systemlib/param/param.h>
 #endif
 
+#define PI 3.14159265359
+
 void QuadControl::Init()
 {
   BaseController::Init();
