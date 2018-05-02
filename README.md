@@ -122,10 +122,10 @@ This was the most challenging part of the tuning process. Right off the bat I wa
 ### Scenario 4. NonIdealities
 
 The non idealities introduced here were two-folds
-1. Quad1 was a heavier than previously encountered (0.8 Kgs).
+1. Quad1 was heavier than so far previously encountered (0.8 Kgs).
 2. Quad3 had an off-center center of mass by (cy = -0.5 m). 
 
-To address the first issue, I first realized that a `maxMotorThrust = 5.0` (I had set this during tuning Attitude Controller wasn't enough to counter a weight of 0.8kgs. This was primarily the reason why it was nose-diving. I therefore increased it to a final value of `maxMotorThrust = 10.0` to comfortably account upto approximately a 1Kg drone mass. 
+To address the first issue, I first realized that a `maxMotorThrust = 5.0` (I had set this during tuning Attitude Controller wasn't enough to counter a weight of 0.8kgs). This was primarily the reason why it was nose-diving. I therefore increased it to a final value of `maxMotorThrust = 10.0` to comfortably account upto approximately a 1Kg drone mass. 
 
 To address both issues in general (model errors), I started introducing PID control effect into the `AltitudeControl()` by setting non-zero posistive values to `KiPosZ`. I had previously implemented the integration term in preparation for this scenario. To tune the Kp, Kd, and Ki for this controller, I kind of started from scratch again by first setting Kp (till it started oscillating), and then setting a positive value for Ki, and then adding Kd and fine tuning these too back and forth. 
 
