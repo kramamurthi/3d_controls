@@ -21,27 +21,27 @@ class NonlinearController(object):
         """Initialize the controller object and control gains"""
         # Body Rate P-controller Gains
         # Units: Newton-m-s^2/radian
-        self.k_p_p = 17.5
-        self.k_p_q = 17.5
-        self.k_p_r = 17.5
+        self.k_p_p = 22
+        self.k_p_q = 22
+        self.k_p_r = 12
 
         # Altitude Controller PD(ff) Gains
-        self.z_k_p = 50.0
-        self.z_k_d = 10.0
+        self.z_k_p = 30.0
+        self.z_k_d = 5.0
 
         # Yaw Controller P Gain
-        self.k_p_yaw = 5.0
+        self.k_p_yaw = 1.47
  
         # Roll Pitch Controller
         # Units: Rad*s/m 
-        self.k_p_roll = 1 
-        self.k_p_pitch = 1 
+        self.k_p_roll = 0.5
+        self.k_p_pitch = 0.5
  
         # Lateral Position Controller
-        self.x_k_p = 5.0
-        self.x_k_d = 1.5
-        self.y_k_p = 5.0
-        self.y_k_d = 1.5
+        self.x_k_p = 7.5
+        self.x_k_d = 2.5
+        self.y_k_p = 7.5
+        self.y_k_d = 2.5
 
         # Global G
         self.g = -GRAVITY

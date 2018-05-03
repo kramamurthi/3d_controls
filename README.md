@@ -62,9 +62,9 @@ Using the web visualizer I was able to verify that the errors were within bounds
 success in traversal. 
 
 ```
-Maximum Horizontal Error:  1.2106718388091182
-Maximum Vertical Error:  0.6861061380952154
-Mission Time:  4.670157
+Maximum Horizontal Error:  1.8365147830528779
+Maximum Vertical Error:  0.7872702537985745
+Mission Time:  2.020544
 Mission Success:  True
 ```
 
